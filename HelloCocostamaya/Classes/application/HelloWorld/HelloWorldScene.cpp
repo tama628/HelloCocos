@@ -1,0 +1,65 @@
+#include "HelloWorldScene.h"
+
+USING_NS_CC;
+
+// on "init" you need to initialize your instance
+void HelloWorldScene::initialize()
+{
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    /////////////////////////////
+    // 1. create layer.
+	auto *pLayer = GameLayer::create();
+	this->addChild(pLayer);
+
+    /////////////////////////////
+    // 2. add a menu item with "X" image, which is clicked to quit the program
+    //    you may modify it.
+
+    // add a "close" icon to exit the progress. it's an autorelease object
+    auto closeItem = MenuItemImage::create(
+                                           "CloseNormal.png",
+                                           "CloseSelected.png",
+                                           CC_CALLBACK_1(HelloWorldScene::menuCloseCallback, this));
+    
+	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
+                                origin.y + closeItem->getContentSize().height/2));
+
+    // create menu, it's an autorelease object
+    auto menu = Menu::create(closeItem, nullptr);
+    menu->setPosition(Vec2::ZERO);
+    pLayer->addChild(menu, 1);
+
+    /////////////////////////////
+    // 3. add your codes below...
+
+    // add a label shows "Hello World"
+    // create and initialize a label
+    
+    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
+    
+    // position the label on the center of the screen
+    label->setPosition(Vec2(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - label->getContentSize().height));
+
+    // add the label as a child to layer
+    pLayer->addChild(label, 1);
+
+    // add "HelloWorld" splash screen"
+    auto sprite = Sprite::create("HelloWorld.png");
+
+    // position the sprite on the center of the screen
+    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+
+    // add the sprite as a child to layer
+    pLayer->addChild(sprite, 0);
+}
+
+void HelloWorldScene::menuCloseCallback(Ref* pSender)
+{
+#ifndef NDEBUG
+	// exit scene.
+	GameManager::getInstance()->popScene();
+#endif
+}

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes">
+      <UniqueIdentifier>{306d03ec-80c6-479e-a8b8-16ab1ce9a70b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\application">
+      <UniqueIdentifier>{0620e9b1-b51f-4a63-a98d-ef39f556b640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\utility">
+      <UniqueIdentifier>{61030032-87c8-40e5-96a0-d0c3a00b0eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\application\HelloWorld">
+      <UniqueIdentifier>{34dbd92d-f729-41d3-9b7b-9af83cdf0abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\utility\cc">
+      <UniqueIdentifier>{88554803-9fe4-408e-b340-a09a6ca36c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\utility\data">
+      <UniqueIdentifier>{b44ce207-10c4-47ba-a084-068ba0c8d324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\utility\cc\input">
+      <UniqueIdentifier>{0f126d12-0cf0-4d59-9c17-62e72fe6268b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\application\LifeGame">
+      <UniqueIdentifier>{d90fb6aa-d588-4892-a384-d572dfa72084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Classes\application\Shooting">
+      <UniqueIdentifier>{1d44a5bc-ceb4-4443-be67-d63bb4b1541d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\HelloWorld\HelloWorldScene.cpp">
+      <Filter>src\Classes\application\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\RootScene.cpp">
+      <Filter>src\Classes\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\input\InputManager.cpp">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\input\KeyManager.cpp">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\input\TouchInfo.cpp">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\input\TouchManager.cpp">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\GameLayer.cpp">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\GameManager.cpp">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\GameScene.cpp">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utility\cc\GameUtility.cpp">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\SceneCreator.cpp">
+      <Filter>src\Classes\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\DebugScene.cpp">
+      <Filter>src\Classes\application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\LifeGame\LifeGameScene.cpp">
+      <Filter>src\Classes\application\LifeGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingBullet.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingEnemy.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingManager.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingPlayer.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingScene.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\application\Shooting\ShootingCollider.cpp">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppConst.h">
+      <Filter>src\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\HelloWorld\HelloWorldScene.h">
+      <Filter>src\Classes\application\HelloWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\type.h">
+      <Filter>src\Classes\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\common.h">
+      <Filter>src\Classes\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\RootScene.h">
+      <Filter>src\Classes\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\data\Array.h">
+      <Filter>src\Classes\utility\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\data\Delegate.h">
+      <Filter>src\Classes\utility\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\data\List.h">
+      <Filter>src\Classes\utility\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\input\InputManager.h">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\input\KeyManager.h">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\input\TouchInfo.h">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\input\TouchManager.h">
+      <Filter>src\Classes\utility\cc\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\cc.h">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\GameLayer.h">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\GameManager.h">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\GameScene.h">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utility\cc\GameUtility.h">
+      <Filter>src\Classes\utility\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\SceneCreator.h">
+      <Filter>src\Classes\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\DebugScene.h">
+      <Filter>src\Classes\application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\LifeGame\LifeGameScene.h">
+      <Filter>src\Classes\application\LifeGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingBullet.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingEnemy.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingManager.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingPlayer.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingScene.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\application\Shooting\ShootingCollider.h">
+      <Filter>src\Classes\application\Shooting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
